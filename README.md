@@ -2,6 +2,10 @@
 
 ## 개요
 "후니의 잡동사니"는 제가 혼자 쓰려고 만든 기능들을 모아둔 Chrome 확장 프로그램입니다.
+<br/>
+<p align="center">
+  <img width="338" height="304" alt="스크린샷 2025-11-30 오전 4 57 02" src="https://github.com/user-attachments/assets/1c5838b5-9500-48cb-8bd2-9d216d1e2bb1" />
+</p>
 
 ## 기능
 - **광고 허용 안내 팝업 제거 (a.k.a AD Blocker Blocker Blocker..?)**: 웹 페이지에 나타나는 특정 클래스의 광고 허용 안내 팝업 및 관련 요소를 자동으로 제거하거나 숨깁니다. 
