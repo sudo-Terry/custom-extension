@@ -98,3 +98,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     return true; // 비동기 응답을 위해 true 반환
   }
 });
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    requestReviews
+  };
+}

@@ -107,3 +107,14 @@ const observer = new MutationObserver(function(mutations) {
 
 // 문서 본문에서 구성된 변경 사항 관찰 시작
 observer.observe(document.body, { childList: true, subtree: true });
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    removeElementsBySelector,
+    hideElementsBySelector,
+    showElementsBySelector,
+    restoreScrolling,
+    applyAdBlocker,
+    disableAdBlocker
+  };
+}

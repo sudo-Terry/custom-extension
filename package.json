@@ -1,0 +1,19 @@
+{
+  "name": "custom-extension",
+  "version": "1.1.0",
+  "description": "혼자 쓰려고 만든 도구 모음",
+  "scripts": {
+    "test": "jest",
+    "test:e2e": "playwright test"
+  },
+  "keywords": [
+    "chrome-extension"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
