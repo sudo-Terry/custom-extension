@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+  position: relative; /* For absolute positioning of settings button */
   width: 100%;
   max-width: 320px;
   background-color: #ffffff;
@@ -70,6 +71,30 @@ button {
 
 button:hover {
   background-color: #2980b9;
+}
+
+/* Settings Button Styles */
+#settingsButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #95a5a6; /* 흐린 회색 */
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+#settingsButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #34495e; /* 진한 회색 */
+  transform: rotate(30deg);
 }
 
 /* Toggle Switch CSS (기존 스타일에서 일부 조정) */
