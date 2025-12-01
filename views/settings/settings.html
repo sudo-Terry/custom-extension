@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>설정 - 후니의 잡동사니</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>코드 리뷰 설정</h1>
+      <p>레포별 리뷰어를 관리하세요.</p>
+    </header>
+
+    <main>
+      <section class="add-section">
+        <h2>새 레포지토리 추가</h2>
+        <form id="addForm">
+          <div class="form-group">
+            <label for="repoName">레포지토리 이름 (예: owner/repo)</label>
+            <input type="text" id="repoName" placeholder="owner/repo" required>
+          </div>
+          <div class="form-group">
+            <label for="reviewers">리뷰어 ID (Enter 또는 쉼표로 구분)</label>
+            <div class="tag-container" id="tagContainer">
+              <input type="text" id="tagInput" placeholder="리뷰어 추가..." autocomplete="off">
+            </div>
+          </div>
+          <button type="submit" class="btn-primary">추가</button>
+        </form>
+      </section>
+
+      <section class="list-section">
+        <h2>저장된 레포지토리</h2>
+        <div id="repoList" class="repo-list">
+          <!-- Repository items will be added here dynamically -->
+          <div class="empty-state">저장된 레포지토리가 없습니다.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <button id="saveButton" class="hidden">저장</button>
+    </footer>
+  </div>
+  <script src="modules/tags.js"></script>
+  <script src="modules/repos.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>
